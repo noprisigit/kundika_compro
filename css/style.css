@@ -1,0 +1,22 @@
+/* Navbar */
+.navbar-brand img {
+    width: 130px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-family: 'Nunito';
+    font-size: 18px;
+}
+
+.navbar-brand .nav-link:hover {
+    color: #325ca8 !important;
+}
+
+/* Desktop Version */
+@media (min-width: 992px) {
+    .navbar-brand img {
+        width: 180px;
+    }
+}
