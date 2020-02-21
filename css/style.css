@@ -133,7 +133,7 @@
 }
 
 .excellence .box-left {
-    height: 100px;
+    height: 110px;
     background-color: white;
     border: 1px solid #eee;
     border-left: 10px solid #0B63DC;
@@ -144,7 +144,7 @@
 }
 
 .excellence .box-right {
-    height: 100px;
+    height: 110px;
     background-color: white;
     border: 1px solid #eee;
     /* border-left: 10px solid #0B63DC; */
@@ -154,24 +154,28 @@
     border-radius: 4px;
 }
 
+.excellence .box-right img {
+    margin-top: 30px !important;
+}
+
 .excellence img {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
+    margin-top: 25px !important;
     margin: 15px;
 }
 
 .excellence h4.excellence-title {
     margin-top: 15px;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .excellence p {
-    font-size: 14px;
+    font-size: 12px;
     color: #ACACAC;
     margin-top: 3px;
-    font-weight: 400;
     text-transform: capitalize;
 }
 
@@ -214,5 +218,42 @@
     .jumbotron .display-4 {
         margin-top: 180px;
         font-size: 60px;
+    }
+
+    /* Excellence */
+    .excellence img {
+        width: 65px;
+        height: 65px;
+        margin: 15px !important;
+    }
+
+    .excellence .box-right img {
+        margin-top: 20px !important;
+    }
+
+    .excellence .box-left {
+        height: 100px;
+    }
+
+    .excellence .box-left h4 {
+        margin-top: 20px !important;
+    }
+
+    .excellence .box-right {
+        height: 100px;
+    }
+
+    .excellence h4.excellence-title {
+        margin-top: 15px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .excellence p {
+        font-size: 14px;
+        color: rgb(112, 108, 108);
+        margin-top: 3px;
+        text-transform: capitalize;
     }
 }
