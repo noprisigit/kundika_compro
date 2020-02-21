@@ -231,7 +231,10 @@
     }
 
     .excellence .box-left {
+        margin-top: 10px !important;
+        margin: auto;
         height: 100px;
+        width: 70%;
     }
 
     .excellence .box-left h4 {
@@ -239,7 +242,10 @@
     }
 
     .excellence .box-right {
+        margin-top: 10px !important;
+        margin: auto;
         height: 100px;
+        width: 70%;
     }
 
     .excellence h4.excellence-title {
