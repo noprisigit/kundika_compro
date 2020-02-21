@@ -55,10 +55,138 @@
 
 /* About Us */
 .about-us {
-    margin-top: 50px;
-    padding: 30px 0;
-    height: 400px;
+    margin-top: 10px;
+    padding: 20px 0;
     /* background-color: aqua; */
+}
+
+.about-us h4 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.about-us p {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.about-us .box {
+    padding: 15px 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 3px 15px -2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+/* Services */
+.services {
+    margin-top: 40px;
+    padding: 10px 0;
+}
+
+.services h4 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.about-us h4::after, .services h4::after, .excellence .choose-us::after {
+    content: '';
+    display: block;
+    width: 100px;
+    background: #242a30;
+    height: 2px;
+    margin-top: 20px !important;
+    margin: auto;
+    bottom: 0;
+}
+
+.services .card {
+    margin-top: 10px;
+    padding-top: 15px;
+    border: 1px solid #eee;
+    box-shadow:  0 3px 15px -2px rgba(0, 0, 0, 0.3);
+}
+
+.services .card h5 {
+    text-transform: uppercase;
+}
+
+.services .card p {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.services img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Excellence */
+.excellence {
+    margin-top: 50px;
+}
+
+.excellence .choose-us {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.excellence .box-left {
+    height: 100px;
+    background-color: white;
+    border: 1px solid #eee;
+    border-left: 10px solid #0B63DC;
+    /* border-right: 10px solid #0B63DC; */
+    margin: 8px 0 8px 0;
+    box-shadow: 0 3px 15px -2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.excellence .box-right {
+    height: 100px;
+    background-color: white;
+    border: 1px solid #eee;
+    /* border-left: 10px solid #0B63DC; */
+    border-right: 10px solid #0B63DC;
+    margin: 8px 0 8px 0;
+    box-shadow: 0 3px 15px -2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.excellence img {
+    width: 65px;
+    height: 65px;
+    margin: 15px;
+}
+
+.excellence h4.excellence-title {
+    margin-top: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.excellence p {
+    font-size: 14px;
+    color: #ACACAC;
+    margin-top: 3px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    height: 60px;
+    background-color: #0851da;
+}
+
+.footer p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
 }
 
 /* Desktop Version */
@@ -67,20 +195,6 @@
     .navbar-brand img {
         width: 180px;
     }
-
-    /* .nav-link:hover::after {
-        content: '';
-        display: block;
-        border-bottom: 3px solid #0B63DC;
-        width: 70%;
-        margin: auto;
-        padding-bottom: 5px;
-        margin-bottom: -8px;
-    } */
-
-    /* .navbar-nav a {
-        border-bottom: 3px solid transparent;   
-    } */
 
     .navbar-nav a:hover {
         border-bottom: 3px solid #0B63DC;
@@ -94,6 +208,7 @@
     /* Jumbotron */
     .jumbotron {
         margin-top: 93px;
+        height: 555px;
     }
 
     .jumbotron .display-4 {
