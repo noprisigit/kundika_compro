@@ -21,14 +21,14 @@
    <!-- Style CSS -->
    <link rel="stylesheet" href="css/style.css">
 
-   <title>Company Profile</title>
+   <title>PT. Kundika Barung Arjaya</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
    <!-- Navbar -->
    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
       <div class="container">
-         <a class="navbar-brand" href="#">
+         <a class="navbar-brand page-scroll" href="#home">
             <img src="img/bg-kundika.png" alt="logo-kundika">
          </a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -37,11 +37,12 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-               <a class="nav-item nav-link active" href="#home">Home</a>
-               <a class="nav-item nav-link" href="#about-us">About Us</a>
-               <a class="nav-item nav-link" href="#">Services</a>
-               <a class="nav-item nav-link" href="#">Partners</a>
-               <a class="nav-item nav-link" href="#">Contact</a>
+               <a class="nav-item nav-link active page-scroll" id="linkhome" href="#home">Home</a>
+               <a class="nav-item nav-link page-scroll" id="linkabout" href="#about">Tentang Kami</a>
+               <a class="nav-item nav-link page-scroll" id="linkservice" href="#services">Layanan</a>
+               <a class="nav-item nav-link page-scroll" id="linkexcellenc" href="#excellence">Mengapa Kami</a>
+               <a class="nav-item nav-link page-scroll" id="linkpartners" href="#partners">Partner</a>
+               <a class="nav-item nav-link page-scroll" id="linkcontact" href="#contact">Kontak</a>
             </div>
          </div>
       </div>
@@ -56,15 +57,59 @@
       </div>
    </div>
 
-   <section class="about-us">
+   <section class="about-us" id="about">
       <div class="container">
-         <h4 class="text-center" id="about-us">About Us</h4>
+         <h4 class="text-center">About Us</h4>
          <div class="row">
             <div class="col">
+               <p class="title text-center">PT. Kundika Barung Arjaya adalah perusahaan berbasis teknologi yang berfokus
+                  pada pembuatan aplikasi. Kami berpengalaman dalam pengembangan dan pengelolaan database dan aplikasi
+                  pengelolaan PDAM.</p>
+            </div>
+         </div>
+         <div class="row mt-3">
+            <div class="col-12 col-sm-12 col-md-3">
                <div class="box">
-                  <p class="text-center">PT. Kundika Barung Arjaya adalah perusahaan berbasis teknologi yang berfokus pada pembuatan aplikasi. Kami berpengalaman dalam pengembangan dan pengelolaan database dan aplikasi pengelolaan PDAM.</p>
+                  <img src="img/barometer.png" class="d-flex mx-auto mb-3" alt="" width="80" height="80">
+                  <p class="box-title">Layanan Prima</p>
+                  <p class="box-description">
+                     Kami melakukan respon secara cepat ketika ada permasalahan teknis. Segala pengaduan dan kendala
+                     akan kami tangani segera. Selain itu kami melakukan maintenance rutin atas jalannya aplikasi
+                  </p>
                </div>
             </div>
+            <div class="col-12 col-sm-12 col-md-3">
+               <div class="box">
+                  <img src="img/barometer.png" class="d-flex mx-auto mb-3" alt="" width="80" height="80">
+                  <p class="box-title">Handal</p>
+                  <p class="box-description">
+                     Di dalam aplikasi kami terdapat analisa tentang efektifitas penagihan, tingkat konsumsi serta harga
+                     rata-rata air per wilayah pelayanan sehingga tidak lagi ada selisih antara perhitungan di aplikasi
+                     dengan kas yang riil
+                  </p>
+               </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+               <div class="box">
+                  <img src="img/barometer.png" class="d-flex mx-auto mb-3" alt="" width="80" height="80">
+                  <p class="box-title">Keputusan</p>
+                  <p class="box-description">
+                     Aplikasi kami dilengkapi dengan fitur-fitur penting sehingga memudahkan pengambilan keputusan bagi
+                     direksi
+                  </p>
+               </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+               <div class="box">
+                  <img src="img/barometer.png" class="d-flex mx-auto mb-3" alt="" width="80" height="80">
+                  <p class="box-title">Biaya Terjangkau</p>
+                  <p class="box-description">
+                     Kami menawarkan paket aplikasi dengan biaya yang terjangkau untuk memberikan pelayanan maksimal
+                     kepada mitra serta tidak perlu investasi server dan tenaga ahli komputer
+                  </p>
+               </div>
+            </div>
+
          </div>
       </div>
    </section>
@@ -74,7 +119,7 @@
          <h4 class="text-center">Product & Services</h4>
          <div class="row justify-content-center">
             <div class="col-12 col-md-4 d-flex justify-content-center">
-               <div class="card" style="width: 20rem;">
+               <div class="card thumbnail" style="width: 20rem;">
                   <img src="img/barometer.png" class="card-img-top mx-auto" alt="Baca Meter">
                   <div class="card-body text-center">
                      <h5>Baca Meter</h5>
@@ -83,8 +128,9 @@
                </div>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center">
-               <div class="card" style="width: 20rem;">
-                  <img src="img/dollars-money-papers-and-a-computer-monitor.png" class="card-img-top mx-auto" alt="Billing System">
+               <div class="card thumbnail" style="width: 20rem;">
+                  <img src="img/dollars-money-papers-and-a-computer-monitor.png" class="card-img-top mx-auto"
+                     alt="Billing System">
                   <div class="card-body text-center">
                      <h5>Billing System</h5>
                      <p>Sistem pembayaran online yang dapat terintegrasi dengan mitra switching</p>
@@ -92,7 +138,7 @@
                </div>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center">
-               <div class="card" style="width: 20rem;">
+               <div class="card thumbnail" style="width: 20rem;">
                   <img src="img/graphic-progression.png" class="card-img-top mx-auto" alt="SAK ETAP">
                   <div class="card-body text-center">
                      <h5>SAK ETAP</h5>
@@ -104,21 +150,22 @@
       </div>
    </section>
 
-   <section class="excellence" id="keunggulan">
+   <section class="excellence" id="excellence">
       <div class="container">
          <h4 class="text-center choose-us">Why Choose Us</h4>
          <div class="row justify-content-center mt-4">
             <div class="col-12">
-               <div class="box-left">
+               <div class="box box-left">
                   <div class="row">
                      <div class="col">
                         <img src="img/chooseus/shield.png" alt="Security" class="float-left">
                         <h4 class="excellence-title">Sistem Aman</h4>
-                        <p>100% hanya bisa dilihat oleh PDAM mitra, tidak oleh pihak manapun termasuk PT. KUNDIKA (kecuali ada ijin PDAM mitra).</p>
+                        <p>100% hanya bisa dilihat oleh PDAM mitra, tidak oleh pihak manapun termasuk PT. KUNDIKA
+                           (kecuali ada ijin PDAM mitra).</p>
                      </div>
                   </div>
                </div>
-               <div class="box-right">
+               <div class="box box-right">
                   <div class="row">
                      <div class="col">
                         <img src="img/chooseus/particle.png" alt="Security" class="float-right">
@@ -127,7 +174,7 @@
                      </div>
                   </div>
                </div>
-               <div class="box-left">
+               <div class="box box-left">
                   <div class="row">
                      <div class="col">
                         <img src="img/chooseus/data.png" alt="Security" class="float-left">
@@ -136,16 +183,17 @@
                      </div>
                   </div>
                </div>
-               <div class="box-right">
+               <div class="box box-right">
                   <div class="row">
                      <div class="col">
                         <img src="img/chooseus/teacher.png" alt="Security" class="float-right">
                         <h4 class="excellence-title text-right">Keandalan</h4>
-                        <p class="text-right">Pengawasan system harian oleh tim PT. Kundika, Tersedia customer care untuk masalah teknik/s operasional, dan Konektifitas keamanan 24 jam.</p>
+                        <p class="text-right">Pengawasan system harian oleh tim PT. Kundika, Tersedia customer care
+                           untuk masalah teknik/s operasional, dan Konektifitas keamanan 24 jam.</p>
                      </div>
                   </div>
                </div>
-               <div class="box-left">
+               <div class="box box-left">
                   <div class="row">
                      <div class="col-lg">
                         <img src="img/chooseus/database.png" alt="Security" class="float-left">
@@ -159,7 +207,7 @@
       </div>
    </section>
 
-   <section class="partners">
+   <section class="partners" id="partners">
       <div class="container">
          <h4>Our Partners</h4>
          <div class="customer-logos slider">
@@ -172,10 +220,34 @@
             <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
             <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
             <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"> -->
+         </div>
+      </div>
+      </div>
+   </section>
+
+   <!-- Contact Us -->
+   <section class="contact-us" id="contact">
+      <div class="container">
+         <h4 class="title">Contact Us</h4>
+         <div class="row">
+            <div class="col">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.319342371593!2d106.78121961424142!3d-6.221554995496295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x58635aeb951ccaec!2sGrand%20ITC%20Permata%20Hijau!5e0!3m2!1sid!2sid!4v1582520097513!5m2!1sid!2sid"
+                  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="col">
+               <h4>PT Kundika Barung Arjaya</h4>
+               <p>Grand ITC Permata Hijau</p>
+               <p>Jl. Arteri Permata Hijau LT.2 BlokB14/24,</p>
+               <p>Kebayoran Lama - Jakarta Selatan. 12210</p>
+               <p>Telp. +(62) 81286125200</p>
+               <br>
+               <a href="mailto:kundika.barung@gmail.com">kundika.barung@gmail.com</a>
             </div>
          </div>
       </div>
    </section>
+   <!-- End of Contact Us -->
 
    <section class="footer">
       <div class="container">
@@ -196,6 +268,7 @@
 
    <!-- Plugins -->
    <script src="plugins/slick-1.8.1/slick/slick.min.js"></script>
+   <script src="js/jquery.easing.js"></script>
    <script src="js/script.js"></script>
 </body>
 
